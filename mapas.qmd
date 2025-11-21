@@ -1,0 +1,22 @@
+from folium import Map, Marker, Icon
+from paradas import paradas
+from posicoes import pos
+
+m = Map(location=[paradas[0]["py"], paradas[0]["px"]], zoom_start=13)
+
+for p in paradas:
+    Marker(
+        location=[p["py"], p["px"]],
+        popup=f"Parada: {p['np']}",
+        icon=Icon(color="blue", icon="bus", prefix="fa")
+    ).add_to(m)
+
+if "vs" in pos and pos["vs"]:
+    for v in pos["vs"]:
+        Marker(
+            location=[v["py"], v["px"]],
+            popup=f"Ônibus {v['p']} - sentido {v['a']}",
+            icon=Icon(color="red", icon="info-sign")
+        ).add_to(m)
+
+m.show_in_browser()

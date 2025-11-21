@@ -1,0 +1,56 @@
+import numpy as np
+import plotly.graph_objects as go
+ 
+# ------------------------------------------
+# 1. Carregar os arquivos
+# ------------------------------------------
+X = np.loadtxt("X.txt")
+y = np.loadtxt("y.txt")
+ 
+# ------------------------------------------
+# 2. Construir matriz X com coluna de 1s
+# ------------------------------------------
+X_matrix = np.column_stack((np.ones(len(X)), X))
+ 
+# ------------------------------------------
+# 3. Calcular beta = (XᵀX)^(-1) Xᵀy
+# ------------------------------------------
+beta = np.linalg.inv(X_matrix.T @ X_matrix) @ (X_matrix.T @ y)
+a = beta[0]   # intercepto
+b = beta[1]   # inclinação
+ 
+print("Coeficientes:")
+print("a =", a)
+print("b =", b)
+ 
+# ------------------------------------------
+# 4. Valores estimados da reta
+# ------------------------------------------
+x_line = np.linspace(X.min(), X.max(), 200)
+y_line = a + b * x_line
+ 
+# ------------------------------------------
+# 5. Plot com Plotly
+# ------------------------------------------
+fig = go.Figure()
+ 
+# pontos reais
+fig.add_trace(go.Scatter(
+    x=X, y=y, mode="markers",
+    name="Dados observados"
+))
+ 
+# reta estimada
+fig.add_trace(go.Scatter(
+    x=x_line, y=y_line, mode="lines",
+    name="Regressão linear"
+))
+ 
+fig.update_layout(
+    title="Regressão Linear com Plotly",
+    xaxis_title="x (anos de estudo)",
+    yaxis_title="y (salário)"
+)
+ 
+# mostrar no navegador
+fig.show()
