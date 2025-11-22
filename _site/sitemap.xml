@@ -1,56 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://your-website-url.example.com/posts/2025-11-19-cot_dolar.html</loc>
-    <lastmod>2025-11-21T21:41:06.212Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/posts/welcome/index.html</loc>
-    <lastmod>2025-11-21T21:03:05.413Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/about.html</loc>
-    <lastmod>2025-11-21T21:03:05.446Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/posts/post-with-code/index.html</loc>
-    <lastmod>2025-11-21T21:03:05.425Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/index.html</loc>
-    <lastmod>2025-11-21T21:05:32.650Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/posts/paradas.html</loc>
-    <lastmod>2025-11-21T20:52:02.608Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/posts/mapas.html</loc>
-    <lastmod>2025-11-08T18:50:44.239Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/posts/posicoes.html</loc>
-    <lastmod>2025-11-21T20:52:39.630Z</lastmod>
+    <loc>https://your-website-url.example.com/regressao_linear.html</loc>
+    <lastmod>2025-11-21T20:57:08.298Z</lastmod>
   </url>
   <url>
     <loc>https://your-website-url.example.com/posts/2025-11-21-onibus.html</loc>
     <lastmod>2025-11-21T22:02:19.082Z</lastmod>
   </url>
   <url>
-    <loc>https://your-website-url.example.com/regressao_linear.html</loc>
-    <lastmod>2025-11-21T20:57:08.298Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/paradas.html</loc>
-    <lastmod>2025-11-21T20:52:02.608Z</lastmod>
+    <loc>https://your-website-url.example.com/posicoes.html</loc>
+    <lastmod>2025-11-21T20:52:39.630Z</lastmod>
   </url>
   <url>
     <loc>https://your-website-url.example.com/mapas.html</loc>
     <lastmod>2025-11-08T18:50:44.239Z</lastmod>
   </url>
   <url>
-    <loc>https://your-website-url.example.com/posicoes.html</loc>
-    <lastmod>2025-11-21T20:52:39.630Z</lastmod>
+    <loc>https://your-website-url.example.com/about.html</loc>
+    <lastmod>2025-11-21T21:03:05.446Z</lastmod>
+  </url>
+  <url>
+    <loc>https://your-website-url.example.com/index.html</loc>
+    <lastmod>2025-11-21T21:05:32.650Z</lastmod>
+  </url>
+  <url>
+    <loc>https://your-website-url.example.com/paradas.html</loc>
+    <lastmod>2025-11-21T20:52:02.608Z</lastmod>
   </url>
   <url>
     <loc>https://your-website-url.example.com/posts/2025-11-21-cot_dolar.html</loc>
@@ -58,6 +34,6 @@
   </url>
   <url>
     <loc>https://your-website-url.example.com/posts/2025-11-21-reg_linear.html</loc>
-    <lastmod>2025-11-21T22:15:43.980Z</lastmod>
+    <lastmod>2025-11-21T22:18:19.836Z</lastmod>
   </url>
 </urlset>

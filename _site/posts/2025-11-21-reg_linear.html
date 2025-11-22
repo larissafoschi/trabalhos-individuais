@@ -180,17 +180,13 @@ O objetivo foi:</p>
 </ul>
 <hr>
 <ul>
-<li><ol type="1">
 <li>Carregando os dados</li>
-</ol></li>
 </ul>
 <p>Os valores de X e y foram carregados utilizando <code>numpy.loadtxt</code>, que lê os arquivos <code>.txt</code> e os converte para arrays numéricos:</p>
 <pre><code>X = np.loadtxt("X.txt")
 y = np.loadtxt("y.txt")</code></pre>
 <ul>
-<li><ol start="2" type="1">
 <li>Montando a matriz do modelo</li>
-</ol></li>
 </ul>
 <p>Em regressão linear, o modelo matemático é:</p>
 <p>ŷ = a + bX</p>
@@ -199,9 +195,7 @@ y = np.loadtxt("y.txt")</code></pre>
 <p>segunda coluna: os valores reais de X</p>
 <pre><code>X_matrix = np.column_stack((np.ones(len(X)), X))</code></pre>
 <ul>
-<li><ol start="3" type="1">
 <li>Cálculo dos coeficientes O vetor de coeficientes é dado pela fórmula matricial clássica da regressão:</li>
-</ol></li>
 </ul>
 <pre><code>β = (XᵀX)⁻¹ Xᵀy</code></pre>
 <p>Onde β contém:</p>
@@ -212,17 +206,13 @@ a = beta[0]
 b = beta[1]</code></pre>
 <p>Ao final deste passo, a e b são os parâmetros da reta que melhor se ajusta aos dados.</p>
 <ul>
-<li><ol start="4" type="1">
 <li>Calculando valores estimados Depois de estimar os coeficientes, foram gerados valores da reta para fins de visualização:</li>
-</ol></li>
 </ul>
 <pre><code>x_line = np.linspace(X.min(), X.max(), 200)
 y_line = a + b * x_line</code></pre>
 <p>Isso permite traçar uma linha contínua cobrindo toda a faixa de valores observados.</p>
 <ul>
-<li><ol start="5" type="1">
 <li>Gráfico com Plotly O gráfico final contém:</li>
-</ol></li>
 </ul>
 <p>pontos reais observados (dados dos arquivos)</p>
 <p>reta da regressão ajustada</p>
